@@ -67,8 +67,11 @@
         width: 100%;
         clear: left;
       }
-    .lesson {
-        width: 100%;
-        clear: left;
+.lesson {
+     width: 100%;
+     clear: left;
+    }
+.footer {
+        height: 200px;
     }
 }
