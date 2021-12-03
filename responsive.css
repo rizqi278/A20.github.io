@@ -74,4 +74,11 @@
 .footer {
         height: 200px;
     }
+.footer-logo {
+    font-size:15px;
+    clear: left;
+    }
+.footer-list ul {
+    clear:right;
+    }
 }
