@@ -75,10 +75,13 @@
         height: 200px;
     }
 .footer-logo {
-    font-size:15px;
+    font-size:20px;
     clear: left;
     }
 .footer-list ul {
     clear:right;
     }
+.footer-list li {
+	font-size:15px;
+}
 }
