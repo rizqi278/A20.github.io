@@ -1,0 +1,359 @@
+
+* {
+	box-sizing: border-box;
+  }
+  
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:georgia;
+}
+/*header*/
+header{
+	background-color: rgba( 32, 32, 32, 0.9);
+  	position:fixed;
+  	width:100%;
+  	top:0;
+  	z-index:10;
+	
+}
+.header-left {
+	font-size: 25px;
+	float: left;
+	color:white;
+	padding-top: 10px;
+	font-family: "Lucida Handwriting";
+}
+.header-right {
+	float: right;
+	margin-right: -25px;
+}
+.header-right a {
+	float: left;
+	display: block;
+	line-height: 50px;
+	padding: 0 15px;
+	color:white;
+	opacity: 0.7;
+}
+.header-right a:hover {
+	opacity: 1;
+}
+.menu-icon {
+	color: white;
+	float: right;
+	font-size: 25px;
+	padding: 21px 0;
+	display: none;
+  }
+
+/*top main*/
+.top-wrapper{
+	background-image:url("background1_edit2.png"); 
+	background-size: cover;
+	color:white;
+	padding-top: 200px;
+	padding-bottom:100px;
+	text-align: center;
+}
+.top-wrapper:hover .container h1{
+	animation-name:anim-h1;
+	animation-duration: 1.5s;
+	position:relative;
+}
+.top-wrapper:hover .container p{
+	animation-name:anim-p;
+	animation-duration: 1.5s;
+	position:relative;
+}
+@keyframes anim-h1{
+	0% 	{top:-50px;opacity: 0.0;}
+	50%{top:0px;opacity:1.0;}
+}
+
+@keyframes anim-p{
+	0% 	{top:-50px;opacity: 0.0;}
+	50% 	{top:-50px;opacity: 0.0;}
+	100%{top:0px;opacity:1.0;}
+}
+
+.container{
+	width: 97%;
+	padding: 0 15px;
+	margin :0 auto;
+}
+.logo{
+	margin:0 auto;
+	display: block;
+	width: 150px;
+	filter:brightness(1000%);
+}
+.container h1{
+	margin-top:30px;
+	margin-bottom: 0;
+	font-size:50px; 
+	text-align: center;
+	font-weight:bold;
+	letter-spacing: 5px;
+	font-family: "Lucida Handwriting";
+}
+.top-wrapper p{
+	margin:0px;
+	padding-top:0px;
+	font-size:20px;
+	text-align: center;
+	font-weight: bolder;
+}
+.btn-wrapper{
+	margin-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 250px;
+}
+.btn{
+	padding:15px 50px;
+	margin-bottom:30px;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bolder;
+	text-decoration: none;
+	opacity: 0.7;
+	font-family:"Lucida Handwriting";
+	border-radius: 7px;
+	width: 100%;
+	color:black;
+	background-color:#f0932b;
+	box-shadow: 0px 10px 70px #e84118
+}
+.menu{
+	margin-bottom: 15px;
+}
+
+.btn:hover{
+	background-color:#ffda79;
+	box-shadow: 0px 10px 70px #fff118;
+}
+
+.profile{
+	height: 550px;
+	margin:auto;
+}
+.heading {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+.heading h2{
+	font-weight : normal;
+	text-align:center;
+	font-family: "Lucida Handwriting";
+}
+.img-profile{
+	width: 45%;
+}
+.img-profile img{
+	float: left;
+	width: 100%;
+	height: 450px;
+	padding-right: 5px;
+}
+.text-container{
+	float: right;
+	width:55%;
+	height: 450px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 5px;
+	padding-bottom: 20px; 
+}
+.text-container p{
+	
+	color: rgba(75, 75, 75,0.8);
+	font-size: 15px;
+	font-weight:normal;
+	line-height: 1.75;
+	text-align: left;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+}
+/*fasilitas*/
+
+.facility {
+height: 500px;
+  padding-bottom: 40px;
+  background-color: white;
+  text-align: center;
+}
+  
+	#slide-holder img {
+		width: 720px;
+		height: 450px;
+	}
+  
+	#slider {
+	  width: 55%;
+	  height: 480px;
+	  overflow: hidden;
+	  float: left;
+	}
+	
+	#slide-holder {
+	  display: flex;
+	  animation: scroller 16s infinite;
+	}
+	
+	@keyframes scroller {
+	  0%{
+		transform: translateX(0);
+	  }
+	  25%{
+		transform: translateX(0);
+	  }
+	  30%{
+		transform: translateX(-100%);
+	  }
+	  50%{
+		transform: translateX(-100%);
+	  }
+	  55%{
+		transform: translateX(-200%);
+	  }
+	  75%{
+		transform: translateX(-200%);
+	  }
+	  80%{
+		transform: translateX(-300%);
+	  }
+	  100%{
+		transform: translateX(-300%);
+	  }
+	}
+.text-facility{
+	float:right;
+	width:45%;
+	height: 480px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	text-align: left;
+}
+.facility-content h2{
+	font-weight : normal;
+	font-family: "Lucida Handwriting";
+	letter-spacing: 2px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.facility-content p{
+	letter-spacing: 3px;
+	line-height: 1.5;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.lesson {
+    float: left;
+    width: 25%;
+  }
+  
+  .lesson-icon p {
+    color: black;
+	font-family: "Lucida Handwriting";
+  }
+  
+  .lesson .text-contents {
+    width: 80%;
+	height: 85px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #31232f;
+    margin-bottom: 10px;
+	
+  }
+
+  .lesson-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    text-align: center;
+  }
+
+  img {
+      width: 230px;
+	  height: 170px;
+  }
+
+  .btn-detail {
+    font-size: 13px;
+    font-weight: bold;
+    color: #06585C;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center right;
+    padding-top: 3px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+	text-align: center;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.btn-more {
+    font-size: 16px;
+    border: 1px solid #06585C;
+    color: #06585C;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-weight: bold;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-more:hover {
+    background-color: #06585C;
+    color: #fff;
+}
+
+.btn-detail:hover {
+    color: #686F70;
+    padding-right: 35px;
+}
+/*FOOTER*/
+.footer {
+	background-color: rgba( 32, 32, 32, 1);
+	color:white;
+	height: 150px;
+	padding:30px;
+  }
+  
+  .footer-logo {
+	font-size:32px;
+	float:left;
+	font-family: "Lucida Handwriting";
+  }
+  .footer-list ul {
+	float:right;
+
+  
+  }
+
+.footer-list li {
+	padding-bottom:20px;
+}
+  

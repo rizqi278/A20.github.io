@@ -1,0 +1,74 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .container h1{
+        font-size: 40px;
+    }
+    .container p{
+        font-size: 10px;
+    }
+    .facility-content h2{
+        font-size: 20px;
+    }
+    .facility-content p{
+        font-size: 13px;
+    }
+    .lesson {
+        width: 50%;
+    }
+  
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .header-right {
+        display: none;
+    }
+    .header-left{
+        padding-top: 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .logo{
+        width: 100px;
+    }
+    .container h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+        
+    }
+    .container p{
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .btn-wrapper{
+        width: 100%;
+    }
+    .img-profile img{
+        clear: left;
+        width: 460px;
+    }
+    .text-facility{
+        height: auto;
+        clear: right;
+        width:100%;
+    }
+    .text-container{
+        clear: right;
+        width:100%;
+    }
+    .facility-content h2{
+        font-size: 10px;
+    }
+    .facility-content p{
+        font-size: 8px;
+    }
+    #slider {
+        width: 100%;
+        clear: left;
+      }
+    .lesson {
+        width: 100%;
+        clear: left;
+    }
+}
