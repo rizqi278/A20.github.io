@@ -46,7 +46,7 @@
     }
     .img-profile img{
         clear: left;
-        width: 460px;
+        width: auto;
     }
     .text-facility{
         height: auto;
